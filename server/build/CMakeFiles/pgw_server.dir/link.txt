@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/pgw_server.dir/server_main.cpp.o CMakeFiles/pgw_server.dir/server.cpp.o -o pgw_server 
