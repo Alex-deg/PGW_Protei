@@ -129,6 +129,198 @@ pgw_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/build
 .PHONY : pgw_server/fast
 
+home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.o: home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.o
+
+# target to build an object file
+home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.i: home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.i
+
+# target to preprocess a source file
+home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.i
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.s: home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.s
+
+# target to generate assembly for a file
+home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.s
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.o: home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.o
+
+# target to build an object file
+home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.i: home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.i
+
+# target to preprocess a source file
+home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.i
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.s: home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.s
+
+# target to generate assembly for a file
+home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.s
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.o: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.o
+
+# target to build an object file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.o
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.i: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.i
+
+# target to preprocess a source file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.i
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.s: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.s
+
+# target to generate assembly for a file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.s
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.o: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.o
+
+# target to build an object file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.o
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.i: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.i
+
+# target to preprocess a source file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.i
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.s: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.s
+
+# target to generate assembly for a file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.s
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.o: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.o
+
+# target to build an object file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.o
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.i: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.i
+
+# target to preprocess a source file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.i
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.s: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.s
+
+# target to generate assembly for a file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.s
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.o: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.o
+
+# target to build an object file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.o
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.i: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.i
+
+# target to preprocess a source file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.i
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.s: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.s
+
+# target to generate assembly for a file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.s
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.o: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.o
+
+# target to build an object file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.o
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.i: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.i
+
+# target to preprocess a source file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.i
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.s: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.s
+
+# target to generate assembly for a file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.s
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.o: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.o
+
+# target to build an object file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.o
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.i: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.i
+
+# target to preprocess a source file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.i
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.s: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.s
+
+# target to generate assembly for a file
+home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.s
+
 server.o: server.cpp.o
 .PHONY : server.o
 
@@ -186,6 +378,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pgw_server"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.o"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.i"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.s"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.o"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.i"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.s"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.o"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.i"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.s"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.o"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.i"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.s"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.o"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.i"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.s"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.o"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.i"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.s"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.o"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.i"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.s"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.o"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.i"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

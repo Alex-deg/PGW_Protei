@@ -14,6 +14,7 @@ add_library(pgw_lib
     src/data_plane.cpp
     src/pdn_connection.cpp
     src/rate_limiter.cpp
+    src/IMSI_handler.cpp
 )
 
 target_link_libraries(pgw_lib
@@ -41,6 +42,7 @@ if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/test)
         src/data_plane.cpp
         src/pdn_connection.cpp
         src/rate_limiter.cpp
+        src/IMSI_handler.cpp
     )
     
     target_link_libraries(pgw_tests

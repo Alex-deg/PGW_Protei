@@ -10,15 +10,21 @@ set(SOURCES
     ../PGW/src/data_plane.cpp
     ../PGW/src/pdn_connection.cpp
     ../PGW/src/rate_limiter.cpp
+    ../PGW/src/IMSI_handler.cpp
+    ../CDR_journal/CDR.cpp
+    ../CDR_journal/functions.cpp
 )
 
 set(HEADERS
     server.h
-    PGW/src/bearer.h
-    PGW/src/control_plane.h
-    PGW/src/data_plane.h
-    PGW/src/pdn_connection.h
-    PGW/src/rate_limiter.h
+    ../PGW/src/bearer.h
+    ../PGW/src/control_plane.h
+    ../PGW/src/data_plane.h
+    ../PGW/src/pdn_connection.h
+    ../PGW/src/rate_limiter.h
+    ../PGW/src/IMSI_handler.h
+    ../CDR_journal/CDR.cpp
+    ../CDR_journal/functions.cpp
 )
 
 add_executable(pgw_server ${SOURCES} ${HEADERS})

@@ -24,7 +24,7 @@ void UDPClient::send_message(const std::string& message) {
 }
 
 std::string UDPClient::receive_response() {
-    int timeout_sec = 0;
+    int timeout_sec = 2;
     fd_set read_fds;
     FD_ZERO(&read_fds);
     FD_SET(client_fd, &read_fds);

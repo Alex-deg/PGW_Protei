@@ -13,7 +13,7 @@ int main(int argc, char* argv[]) {
         UDPClient client(server_ip, server_port);
 
         while (true) { // Добавить IMSI (15 цифр)
-            std::cout << "Enter message (or 'quit' to exit): ";
+            std::cout << "Enter IMSI (or 'quit' to exit): ";
             std::string message;
             std::getline(std::cin, message);
 

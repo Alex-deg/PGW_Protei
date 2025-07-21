@@ -88,19 +88,24 @@ void UDPServer::handleClientData(int fd) {
                 throw std::runtime_error("Failed to receive data");
             }
         }
-
         // Обработка полученных данных
         std::string message(buffer, bytes_received);
-        char client_ip[INET_ADDRSTRLEN];
-        inet_ntop(AF_INET, &client_addr.sin_addr, client_ip, INET_ADDRSTRLEN);
-        
-        std::cout << "Received from " << client_ip << ":" << ntohs(client_addr.sin_port)
-                    << " - " << message << std::endl;
+        if(imsi.setIMSI(message)){
 
-        // Отправка ответа
-        std::string response = "Echo: " + message;
-        sendto(server_fd, response.c_str(), response.size(), 0,
-                (struct sockaddr*)&client_addr, client_len);
+            cdr.writeLine("21.07.2025,"+imsi.getIMSI()+",connection is successful");
+
+            char client_ip[INET_ADDRSTRLEN];
+            inet_ntop(AF_INET, &client_addr.sin_addr, client_ip, INET_ADDRSTRLEN);
+            
+            std::cout << "Received from " << client_ip << ":" << ntohs(client_addr.sin_port)
+                        << " - " << message << std::endl;
+
+            // Отправка ответа
+            std::string response = "Echo: " + message;
+            sendto(server_fd, response.c_str(), response.size(), 0,
+                    (struct sockaddr*)&client_addr, client_len);
+        }
+        else cdr.writeLine("21.07.2025,"+imsi.getIMSI()+",connection is wrong");
     }
 }
 
