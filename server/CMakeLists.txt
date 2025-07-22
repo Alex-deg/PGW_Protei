@@ -23,8 +23,9 @@ set(HEADERS
     ../PGW/src/pdn_connection.h
     ../PGW/src/rate_limiter.h
     ../PGW/src/IMSI_handler.h
-    ../FileHandler/FileHandler.cpp
-    ../FileHandler/functions.cpp
+    ../FileHandler/FileHandler.h
+    ../FileHandler/functions.h
+    ../json.hpp
 )
 
 add_executable(pgw_server ${SOURCES} ${HEADERS})

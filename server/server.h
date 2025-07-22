@@ -19,6 +19,9 @@
 
 #include "../PGW/src/IMSI_handler.h"
 #include "../FileHandler/FileHandler.h"
+#include "../json.hpp"
+
+using nlohmann::json;
 
 class UDPServer {
 public:

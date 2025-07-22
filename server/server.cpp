@@ -4,6 +4,12 @@ UDPServer::UDPServer(int port){
     this->port = port;
     epoll_fd = -1;
     server_fd = -1;
+    std::ifstream json_file_stream("../example.json");
+    json data = json::parse(json_file_stream);
+    std::cout << "server_ip = " << data["server_ip"].get<std::string>() << std::endl;
+    std::cout << "server_port = " << data["server_port"].get<unsigned int>() << std::endl;
+    std::cout << "log_file = " << data["log_file"].get<std::string>() << std::endl;
+    std::cout << "log_level = " << data["log_level"].get<std::string>() << std::endl;
     createSocket();
     setupEpoll();
 }
@@ -90,29 +96,34 @@ void UDPServer::handleClientData(int fd) {
             }
         }
 
+        std::string message(buffer, bytes_received);
+        std::string response = "Echo: ";
+
         std::time_t currentTime = std::time(nullptr);
         std::tm localTime = *std::localtime(&currentTime);
         std::string now = std::ctime(&currentTime);
         now.pop_back();
-
+        now += ","+message+",";
         // Обработка полученных данных
-        std::string message(buffer, bytes_received);
         if(imsi.setIMSI(message)){
 
-            cdr.writeLine(now+","+imsi.getIMSI()+",connection is successful");
+            cdr.writeLine(now+"connection is successful");
 
             char client_ip[INET_ADDRSTRLEN];
             inet_ntop(AF_INET, &client_addr.sin_addr, client_ip, INET_ADDRSTRLEN);
             
             std::cout << "Received from " << client_ip << ":" << ntohs(client_addr.sin_port)
                         << " - " << message << std::endl;
+            response += message;
 
-            // Отправка ответа
-            std::string response = "Echo: " + message;
-            sendto(server_fd, response.c_str(), response.size(), 0,
-                    (struct sockaddr*)&client_addr, client_len);
         }
-        else cdr.writeLine(now+","+imsi.getIMSI()+",connection is wrong");
+        else{
+            cdr.writeLine(now+"connection is wrong");
+            response += "Your IMSI isn't correct";
+        }
+        
+        sendto(server_fd, response.c_str(), response.size(), 0,
+                (struct sockaddr*)&client_addr, client_len);
     }
 }
 
