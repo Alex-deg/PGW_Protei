@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o"
-  "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o.d"
-  "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o"
-  "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o.d"
+  "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o"
+  "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o.d"
+  "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o"
+  "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o.d"
   "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.o"
   "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.o.d"
   "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.o"

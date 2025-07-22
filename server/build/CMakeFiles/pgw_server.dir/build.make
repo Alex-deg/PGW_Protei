@@ -181,33 +181,33 @@ CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp -o CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.s
 
-CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o: CMakeFiles/pgw_server.dir/flags.make
-CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o: /home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp
-CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o: CMakeFiles/pgw_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o -MF CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o.d -o CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o -c /home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp
+CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o: CMakeFiles/pgw_server.dir/flags.make
+CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o: /home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp
+CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o: CMakeFiles/pgw_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o -MF CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o.d -o CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o -c /home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp
 
-CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp > CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.i
+CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp > CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.i
 
-CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp -o CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.s
+CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp -o CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.s
 
-CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o: CMakeFiles/pgw_server.dir/flags.make
-CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o: /home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp
-CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o: CMakeFiles/pgw_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o -MF CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o.d -o CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o -c /home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp
+CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o: CMakeFiles/pgw_server.dir/flags.make
+CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o: /home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp
+CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o: CMakeFiles/pgw_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o -MF CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o.d -o CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o -c /home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp
 
-CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp > CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.i
+CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp > CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.i
 
-CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp -o CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.s
+CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp -o CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.s
 
 # Object files for target pgw_server
 pgw_server_OBJECTS = \
@@ -219,8 +219,8 @@ pgw_server_OBJECTS = \
 "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.o" \
 "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.o" \
 "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.o" \
-"CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o" \
-"CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o"
+"CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o" \
+"CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o"
 
 # External object files for target pgw_server
 pgw_server_EXTERNAL_OBJECTS =
@@ -233,8 +233,8 @@ pgw_server: CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_
 pgw_server: CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.o
-pgw_server: CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o
-pgw_server: CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o
+pgw_server: CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o
+pgw_server: CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/build.make
 pgw_server: CMakeFiles/pgw_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable pgw_server"

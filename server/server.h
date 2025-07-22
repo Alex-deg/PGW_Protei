@@ -15,9 +15,10 @@
 #include <fcntl.h>
 #include <stack>
 #include <string>
+#include <ctime>
 
 #include "../PGW/src/IMSI_handler.h"
-#include "../CDR_journal/CDR.h"
+#include "../FileHandler/FileHandler.h"
 
 class UDPServer {
 public:
@@ -36,7 +37,7 @@ private:
     int server_fd;
 
     IMSI imsi;
-    CDR cdr;
+    FileHandler cdr;
     //std::vector<struct epoll_event> events_{MAX_EVENTS};
 
     void createSocket();

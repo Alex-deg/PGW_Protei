@@ -1,0 +1,6 @@
+timestamp, IMSI, action
+Tue Jul 22 16:36:57 2025,121212121212123,connection is successful
+Tue Jul 22 16:37:02 2025,345634231425654,connection is successful
+Tue Jul 22 16:39:05 2025,121212121212123,connection is successful
+Tue Jul 22 16:39:16 2025,345678765434567,connection is successful
+Tue Jul 22 16:39:24 2025,345678765434567,connection is wrong

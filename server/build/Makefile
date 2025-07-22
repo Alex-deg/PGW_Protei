@@ -129,53 +129,53 @@ pgw_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/build
 .PHONY : pgw_server/fast
 
-home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.o: home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o
-.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.o
+home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.o: home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.o
 
 # target to build an object file
-home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o
-.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.o
+home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o
 
-home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.i: home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.i
-.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.i
+home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.i: home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.i
 
 # target to preprocess a source file
-home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.i
-.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.i
+home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.i
 
-home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.s: home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.s
-.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.s
+home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.s: home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.s
 
 # target to generate assembly for a file
-home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.s
-.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.cpp.s
+home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.s
 
-home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.o: home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o
-.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.o
+home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.o: home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.o
 
 # target to build an object file
-home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o
-.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.o
+home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o
 
-home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.i: home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.i
-.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.i
+home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.i: home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.i
 
 # target to preprocess a source file
-home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.i
-.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.i
+home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.i
 
-home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.s: home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.s
-.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.s
+home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.s: home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.s
 
 # target to generate assembly for a file
-home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.s
-.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.cpp.s
+home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.s
 
 home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.o: home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.o
 .PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.o
@@ -378,12 +378,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pgw_server"
-	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.o"
-	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.i"
-	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/CDR.s"
-	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.o"
-	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.i"
-	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/CDR_journal/functions.s"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.o"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.i"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.s"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.o"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.i"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.s"
 	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.o"
 	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.i"
 	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.s"

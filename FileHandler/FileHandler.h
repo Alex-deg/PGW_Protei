@@ -7,14 +7,14 @@
 
 // Реализовать логику .csv файла и настроить вывод
 
-class CDR{
+class FileHandler{
 public:
-    CDR();
+    FileHandler(std::string path = "../../Data/CDR_journal.csv");
     std::string readLine();
     void writeLine(std::string data);
     void resetOffset();
-    ~CDR();
+    ~FileHandler();
 private:
-    std::string path = "CDR_journal.csv";
+    std::string path;
     std::fstream file;
 };

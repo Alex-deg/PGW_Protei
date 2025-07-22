@@ -8,6 +8,7 @@ int main(int argc, char* argv[]) {
 
     try {
         int port = std::stoi(argv[1]);
+        system("pwd");
         UDPServer server(port);
         server.run();
     } catch (const std::exception& e) {

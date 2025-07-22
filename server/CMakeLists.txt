@@ -11,8 +11,8 @@ set(SOURCES
     ../PGW/src/pdn_connection.cpp
     ../PGW/src/rate_limiter.cpp
     ../PGW/src/IMSI_handler.cpp
-    ../CDR_journal/CDR.cpp
-    ../CDR_journal/functions.cpp
+    ../FileHandler/FileHandler.cpp
+    ../FileHandler/functions.cpp
 )
 
 set(HEADERS
@@ -23,8 +23,8 @@ set(HEADERS
     ../PGW/src/pdn_connection.h
     ../PGW/src/rate_limiter.h
     ../PGW/src/IMSI_handler.h
-    ../CDR_journal/CDR.cpp
-    ../CDR_journal/functions.cpp
+    ../FileHandler/FileHandler.cpp
+    ../FileHandler/functions.cpp
 )
 
 add_executable(pgw_server ${SOURCES} ${HEADERS})

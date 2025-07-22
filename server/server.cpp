@@ -72,6 +72,7 @@ void UDPServer::setupEpoll() {
 }
 
 void UDPServer::handleClientData(int fd) {
+
     char buffer[BUF_SIZE];
     struct sockaddr_in client_addr;
     socklen_t client_len = sizeof(client_addr);
@@ -88,11 +89,17 @@ void UDPServer::handleClientData(int fd) {
                 throw std::runtime_error("Failed to receive data");
             }
         }
+
+        std::time_t currentTime = std::time(nullptr);
+        std::tm localTime = *std::localtime(&currentTime);
+        std::string now = std::ctime(&currentTime);
+        now.pop_back();
+
         // Обработка полученных данных
         std::string message(buffer, bytes_received);
         if(imsi.setIMSI(message)){
 
-            cdr.writeLine("21.07.2025,"+imsi.getIMSI()+",connection is successful");
+            cdr.writeLine(now+","+imsi.getIMSI()+",connection is successful");
 
             char client_ip[INET_ADDRSTRLEN];
             inet_ntop(AF_INET, &client_addr.sin_addr, client_ip, INET_ADDRSTRLEN);
@@ -105,7 +112,7 @@ void UDPServer::handleClientData(int fd) {
             sendto(server_fd, response.c_str(), response.size(), 0,
                     (struct sockaddr*)&client_addr, client_len);
         }
-        else cdr.writeLine("21.07.2025,"+imsi.getIMSI()+",connection is wrong");
+        else cdr.writeLine(now+","+imsi.getIMSI()+",connection is wrong");
     }
 }
 
