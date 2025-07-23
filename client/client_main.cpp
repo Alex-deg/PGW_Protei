@@ -1,5 +1,7 @@
 #include "client.h"
 
+#include "../BCD/bcd.h"
+
 int main(int argc, char* argv[]) {
     try {
 
@@ -14,7 +16,7 @@ int main(int argc, char* argv[]) {
                 break;
             }
 
-            client.send_message(message);
+            client.send_message(BCD::encode_imsi(message));
             
             try {
                 std::string response = client.receive_response();

@@ -1,9 +1,15 @@
 #pragma once
 
-#include <string>
+// Проверить алгоритм кодирования/декодирования - 100% где то не то
 
-class BSD{
+#include <string>
+#include <vector>
+#include <stdint.h>
+
+#include <iostream>
+
+class BCD{
 public:
-    static std::string encode_bcd(const std::string &data);
-    static std::string decode_bcd(const std::string &code);
+    static std::vector<uint8_t> encode_imsi(const std::string& imsi);
+    static std::string decode_imsi(const std::vector<uint8_t>& bytes);
 };

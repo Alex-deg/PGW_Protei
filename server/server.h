@@ -19,8 +19,10 @@
 
 #include "PGW/src/IMSI_handler.h"
 #include "PGW/src/data_plane.h"
+#include "PGW/src/control_plane.h"
 #include "FileHandler/FileHandler.h"
 #include "../json.hpp"
+#include "../BCD/bcd.h"
 
 using nlohmann::json;
 
@@ -51,7 +53,8 @@ private:
     int http_port;
     int graceful_shutdown_rate;
 
-    data_plane &_data_plane;
+    std::shared_ptr<control_plane> cp = std::make_shared<control_plane>();
+    std::shared_ptr<data_plane> dp;
 
     IMSI imsi;
     FileHandler cdr;

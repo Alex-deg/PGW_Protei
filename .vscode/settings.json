@@ -69,6 +69,15 @@
         "variant": "cpp",
         "forward_list": "cpp",
         "ranges": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "csignal": "cpp",
+        "strstream": "cpp",
+        "bitset": "cpp",
+        "cfenv": "cpp",
+        "complex": "cpp",
+        "list": "cpp",
+        "expected": "cpp",
+        "stdfloat": "cpp",
+        "typeindex": "cpp"
     }
 }

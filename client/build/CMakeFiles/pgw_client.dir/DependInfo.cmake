@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alex/Протей/Выпускная_работа/PGW_Protei/client/client.cpp" "CMakeFiles/pgw_client.dir/client.cpp.o" "gcc" "CMakeFiles/pgw_client.dir/client.cpp.o.d"
   "/home/alex/Протей/Выпускная_работа/PGW_Protei/client/client_main.cpp" "CMakeFiles/pgw_client.dir/client_main.cpp.o" "gcc" "CMakeFiles/pgw_client.dir/client_main.cpp.o.d"
+  "/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp" "CMakeFiles/pgw_client.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o" "gcc" "CMakeFiles/pgw_client.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

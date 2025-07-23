@@ -1,5 +1,4 @@
 #include "control_plane.h"
-#include "session.h"
 
 control_plane::control_plane(){}
 

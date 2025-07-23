@@ -27,7 +27,7 @@ public:
 
     ~UDPClient();
 
-    void send_message(const std::string& message);
+    void send_message(std::vector<uint8_t> data);
 
     std::string receive_response();
 

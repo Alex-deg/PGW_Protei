@@ -11,11 +11,9 @@ class udp_server;
 
 class data_plane {
 public:
-    using Packet = std::vector<uint8_t>;
-    explicit data_plane(control_plane &control_plane);
-public:
-    std::string handle_packet(const Packet &packet);
+    explicit data_plane(std::shared_ptr<control_plane> cp);
+    std::string handle_packet(const std::string &imsi);
 private:
     friend udp_server;
-    control_plane &_control_plane;
+    std::shared_ptr<control_plane> cp;
 };

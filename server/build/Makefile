@@ -201,30 +201,6 @@ PGW/src/IMSI_handler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.s
 .PHONY : PGW/src/IMSI_handler.cpp.s
 
-PGW/src/bearer.o: PGW/src/bearer.cpp.o
-.PHONY : PGW/src/bearer.o
-
-# target to build an object file
-PGW/src/bearer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/bearer.cpp.o
-.PHONY : PGW/src/bearer.cpp.o
-
-PGW/src/bearer.i: PGW/src/bearer.cpp.i
-.PHONY : PGW/src/bearer.i
-
-# target to preprocess a source file
-PGW/src/bearer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/bearer.cpp.i
-.PHONY : PGW/src/bearer.cpp.i
-
-PGW/src/bearer.s: PGW/src/bearer.cpp.s
-.PHONY : PGW/src/bearer.s
-
-# target to generate assembly for a file
-PGW/src/bearer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/bearer.cpp.s
-.PHONY : PGW/src/bearer.cpp.s
-
 PGW/src/control_plane.o: PGW/src/control_plane.cpp.o
 .PHONY : PGW/src/control_plane.o
 
@@ -273,53 +249,53 @@ PGW/src/data_plane.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/data_plane.cpp.s
 .PHONY : PGW/src/data_plane.cpp.s
 
-PGW/src/pdn_connection.o: PGW/src/pdn_connection.cpp.o
-.PHONY : PGW/src/pdn_connection.o
+PGW/src/session.o: PGW/src/session.cpp.o
+.PHONY : PGW/src/session.o
 
 # target to build an object file
-PGW/src/pdn_connection.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/pdn_connection.cpp.o
-.PHONY : PGW/src/pdn_connection.cpp.o
+PGW/src/session.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/session.cpp.o
+.PHONY : PGW/src/session.cpp.o
 
-PGW/src/pdn_connection.i: PGW/src/pdn_connection.cpp.i
-.PHONY : PGW/src/pdn_connection.i
+PGW/src/session.i: PGW/src/session.cpp.i
+.PHONY : PGW/src/session.i
 
 # target to preprocess a source file
-PGW/src/pdn_connection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/pdn_connection.cpp.i
-.PHONY : PGW/src/pdn_connection.cpp.i
+PGW/src/session.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/session.cpp.i
+.PHONY : PGW/src/session.cpp.i
 
-PGW/src/pdn_connection.s: PGW/src/pdn_connection.cpp.s
-.PHONY : PGW/src/pdn_connection.s
+PGW/src/session.s: PGW/src/session.cpp.s
+.PHONY : PGW/src/session.s
 
 # target to generate assembly for a file
-PGW/src/pdn_connection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/pdn_connection.cpp.s
-.PHONY : PGW/src/pdn_connection.cpp.s
+PGW/src/session.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/session.cpp.s
+.PHONY : PGW/src/session.cpp.s
 
-PGW/src/rate_limiter.o: PGW/src/rate_limiter.cpp.o
-.PHONY : PGW/src/rate_limiter.o
+home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.o: home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.o
 
 # target to build an object file
-PGW/src/rate_limiter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/rate_limiter.cpp.o
-.PHONY : PGW/src/rate_limiter.cpp.o
+home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o
 
-PGW/src/rate_limiter.i: PGW/src/rate_limiter.cpp.i
-.PHONY : PGW/src/rate_limiter.i
+home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.i: home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.i
 
 # target to preprocess a source file
-PGW/src/rate_limiter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/rate_limiter.cpp.i
-.PHONY : PGW/src/rate_limiter.cpp.i
+home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.i
 
-PGW/src/rate_limiter.s: PGW/src/rate_limiter.cpp.s
-.PHONY : PGW/src/rate_limiter.s
+home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.s: home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.s
 
 # target to generate assembly for a file
-PGW/src/rate_limiter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/rate_limiter.cpp.s
-.PHONY : PGW/src/rate_limiter.cpp.s
+home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.s
 
 server.o: server.cpp.o
 .PHONY : server.o
@@ -387,21 +363,18 @@ help:
 	@echo "... PGW/src/IMSI_handler.o"
 	@echo "... PGW/src/IMSI_handler.i"
 	@echo "... PGW/src/IMSI_handler.s"
-	@echo "... PGW/src/bearer.o"
-	@echo "... PGW/src/bearer.i"
-	@echo "... PGW/src/bearer.s"
 	@echo "... PGW/src/control_plane.o"
 	@echo "... PGW/src/control_plane.i"
 	@echo "... PGW/src/control_plane.s"
 	@echo "... PGW/src/data_plane.o"
 	@echo "... PGW/src/data_plane.i"
 	@echo "... PGW/src/data_plane.s"
-	@echo "... PGW/src/pdn_connection.o"
-	@echo "... PGW/src/pdn_connection.i"
-	@echo "... PGW/src/pdn_connection.s"
-	@echo "... PGW/src/rate_limiter.o"
-	@echo "... PGW/src/rate_limiter.i"
-	@echo "... PGW/src/rate_limiter.s"
+	@echo "... PGW/src/session.o"
+	@echo "... PGW/src/session.i"
+	@echo "... PGW/src/session.s"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.o"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.i"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

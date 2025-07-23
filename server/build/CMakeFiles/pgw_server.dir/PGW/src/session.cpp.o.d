@@ -1,7 +1,7 @@
-CMakeFiles/pgw_server.dir/PGW/src/control_plane.cpp.o: \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/control_plane.cpp \
+CMakeFiles/pgw_server.dir/PGW/src/session.cpp.o: \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/session.cpp \
  /usr/include/stdc-predef.h \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/control_plane.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/session.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -151,12 +151,4 @@ CMakeFiles/pgw_server.dir/PGW/src/control_plane.cpp.o: \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
- /usr/include/c++/13/bits/uses_allocator_args.h \
- /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/erase_if.h \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/session.h
+ /usr/include/c++/13/bits/uses_allocator_args.h

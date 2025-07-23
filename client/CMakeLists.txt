@@ -5,10 +5,12 @@ project(pgw_client)
 set(SOURCES 
     client_main.cpp
     client.cpp
+    ../BCD/bcd.cpp
 )
 
 set(HEADERS 
     client.h
+    ../BCD/bcd.h
     ../json.hpp
 )
 

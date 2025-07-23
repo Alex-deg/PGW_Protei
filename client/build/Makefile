@@ -177,6 +177,30 @@ client_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_client.dir/build.make CMakeFiles/pgw_client.dir/client_main.cpp.s
 .PHONY : client_main.cpp.s
 
+home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.o: home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.o
+
+# target to build an object file
+home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_client.dir/build.make CMakeFiles/pgw_client.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.i: home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.i
+
+# target to preprocess a source file
+home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_client.dir/build.make CMakeFiles/pgw_client.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.i
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.i
+
+home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.s: home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.s
+
+# target to generate assembly for a file
+home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_client.dir/build.make CMakeFiles/pgw_client.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.s
+.PHONY : home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... client_main.o"
 	@echo "... client_main.i"
 	@echo "... client_main.s"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.o"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.i"
+	@echo "... home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.s"
 .PHONY : help
 
 

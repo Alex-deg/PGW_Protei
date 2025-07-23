@@ -3,8 +3,7 @@
 #include <memory>
 #include <string>
 #include <unordered_map>
-
-class session;
+#include "session.h"
 
 class control_plane {
 public:

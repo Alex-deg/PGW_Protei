@@ -81,12 +81,12 @@ clean: CMakeFiles/pgw_server.dir/clean
 CMakeFiles/pgw_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target pgw_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target pgw_server"
 .PHONY : CMakeFiles/pgw_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pgw_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pgw_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles 0
 .PHONY : CMakeFiles/pgw_server.dir/rule

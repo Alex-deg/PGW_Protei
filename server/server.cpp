@@ -2,6 +2,7 @@
 
 UDPServer::UDPServer(){
     parse_server_config();
+    dp = std::make_shared<data_plane>(cp);
     epoll_fd = -1;
     server_fd = -1;
     createSocket();
@@ -73,12 +74,12 @@ void UDPServer::setupEpoll() {
 
 void UDPServer::handleClientData(int fd) {
 
-    char buffer[BUF_SIZE];
+    std::vector<uint8_t> buffer(BUF_SIZE);
     struct sockaddr_in client_addr;
     socklen_t client_len = sizeof(client_addr);
 
     while (true) {
-        ssize_t bytes_received = recvfrom(server_fd, buffer, BUF_SIZE, 0,
+        ssize_t bytes_received = recvfrom(server_fd, buffer.data(), BUF_SIZE, 0,
                                         (struct sockaddr*)&client_addr, &client_len);
         
         if (bytes_received == -1) {
@@ -90,9 +91,10 @@ void UDPServer::handleClientData(int fd) {
             }
         }
 
-        
+        buffer.resize(bytes_received);
 
-        std::string message(buffer, bytes_received);
+        std::string message = BCD::decode_imsi(buffer);
+
         std::string response = "Echo: ";
 
         std::time_t currentTime = std::time(nullptr);
@@ -100,6 +102,7 @@ void UDPServer::handleClientData(int fd) {
         std::string now = std::ctime(&currentTime);
         now.pop_back();
         now += ","+message+",";
+
         // Обработка полученных данных
         if(imsi.setIMSI(message)){
 
@@ -119,8 +122,8 @@ void UDPServer::handleClientData(int fd) {
         }
         
         // Разобраться с типом буфера
-        // std::string packet_result = _data_plane.handle_packet(buffer);
-
+        std::string packet_result = dp->handle_packet(BCD::decode_imsi(buffer));
+        response = packet_result + ": "+ response;
         sendto(server_fd, response.c_str(), response.size(), 0,
                 (struct sockaddr*)&client_addr, client_len);
     }

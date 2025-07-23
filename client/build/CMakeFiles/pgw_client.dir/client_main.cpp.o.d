@@ -275,4 +275,5 @@ CMakeFiles/pgw_client.dir/client_main.cpp.o: \
  /usr/include/c++/13/bits/locale_conv.h /usr/include/c++/13/iomanip \
  /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/codecvt \
  /usr/include/c++/13/bits/fs_dir.h /usr/include/c++/13/bits/fs_ops.h \
- /usr/include/c++/13/optional /usr/include/c++/13/any
+ /usr/include/c++/13/optional /usr/include/c++/13/any \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/client/../BCD/bcd.h

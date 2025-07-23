@@ -13,13 +13,12 @@ UDPClient::~UDPClient() {
     }
 }
 
-void UDPClient::send_message(const std::string& message) {
-    ssize_t bytes_sent = sendto(client_fd, message.c_str(), message.size(), 0,
+void UDPClient::send_message(std::vector<uint8_t> data) {
+    ssize_t bytes_sent = sendto(client_fd, data.data(), data.size(), 0,
                                 (struct sockaddr*)&server_addr, sizeof(server_addr));
     if (bytes_sent == -1) {
         throw std::runtime_error("Failed to send message");
     }
-    std::cout << "Sent: " << message << std::endl;
 }
 
 std::string UDPClient::receive_response() {
