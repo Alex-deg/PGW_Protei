@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.12)
 
 include(FetchContent)
 
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 find_package(Boost 1.87 COMPONENTS asio)
 if (NOT ${Boost_FOUND})
     FetchContent_Declare(

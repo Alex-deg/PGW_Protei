@@ -1,15 +1,9 @@
 #include "server.h"
 
 int main(int argc, char* argv[]) {
-    if (argc != 2) {
-        std::cerr << "Слишком мало аргументов: должно быть 2" << std::endl;
-        return EXIT_FAILURE;
-    }
-
     try {
-        int port = std::stoi(argv[1]);
-        system("pwd");
-        UDPServer server(port);
+        system("bash ../scripts/generate_blacklist.sh");
+        UDPServer server;
         server.run();
     } catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;

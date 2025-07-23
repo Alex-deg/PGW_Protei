@@ -1,15 +1,9 @@
 #include "server.h"
 
-UDPServer::UDPServer(int port){
-    this->port = port;
+UDPServer::UDPServer(){
+    parse_server_config();
     epoll_fd = -1;
     server_fd = -1;
-    std::ifstream json_file_stream("../example.json");
-    json data = json::parse(json_file_stream);
-    std::cout << "server_ip = " << data["server_ip"].get<std::string>() << std::endl;
-    std::cout << "server_port = " << data["server_port"].get<unsigned int>() << std::endl;
-    std::cout << "log_file = " << data["log_file"].get<std::string>() << std::endl;
-    std::cout << "log_level = " << data["log_level"].get<std::string>() << std::endl;
     createSocket();
     setupEpoll();
 }
@@ -20,7 +14,7 @@ UDPServer::~UDPServer() {
 }
 
 void UDPServer::run() {
-    std::cout << "UDP server running on port " << port << "..." << std::endl;
+    std::cout << "UDP server running on server_port " << server_port << "..." << std::endl;
     
     struct epoll_event events[MAX_EVENTS];
 
@@ -52,7 +46,7 @@ void UDPServer::createSocket() {
     struct sockaddr_in address{};
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = INADDR_ANY;
-    address.sin_port = htons(port);
+    address.sin_port = htons(server_port);
 
     if (bind(server_fd, (struct sockaddr*)&address, sizeof(address))) {
         close(server_fd);
@@ -96,6 +90,8 @@ void UDPServer::handleClientData(int fd) {
             }
         }
 
+        
+
         std::string message(buffer, bytes_received);
         std::string response = "Echo: ";
 
@@ -122,6 +118,9 @@ void UDPServer::handleClientData(int fd) {
             response += "Your IMSI isn't correct";
         }
         
+        // Разобраться с типом буфера
+        // std::string packet_result = _data_plane.handle_packet(buffer);
+
         sendto(server_fd, response.c_str(), response.size(), 0,
                 (struct sockaddr*)&client_addr, client_len);
     }
@@ -132,4 +131,18 @@ int UDPServer::set_nonblocking(int fd)
     int flags = fcntl(fd, F_GETFL, 0);
     if(flags == -1) return -1;
     return fcntl(fd, F_SETFL, flags | O_NONBLOCK);
+}
+
+void UDPServer::parse_server_config(){
+    std::ifstream json_file_stream("../server_config.json");
+    json data = json::parse(json_file_stream);
+    udp_ip = data["udp_ip"].get<std::string>();
+    server_port = data["udp_port"].get<unsigned int>();
+    session_timeout_sec = data["session_timeout_sec"].get<unsigned int>();
+    cdr_file = data["cdr_file"].get<std::string>();
+    http_port = data["http_port"].get<unsigned int>();
+    graceful_shutdown_rate = data["graceful_shutdown_rate"].get<unsigned int>();
+    log_file = data["log_file"].get<std::string>();
+    log_level = data["log_level"].get<std::string>();
+    black_list = data["blacklist"].get<std::string>();
 }

@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/FileHandler.cpp.o.d"
-  "/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/FileHandler/functions.cpp.o.d"
-  "/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/IMSI_handler.cpp.o.d"
-  "/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/bearer.cpp.o.d"
-  "/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/control_plane.cpp.o.d"
-  "/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/data_plane.cpp.o.d"
-  "/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/pdn_connection.cpp.o.d"
-  "/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/PGW/src/rate_limiter.cpp.o.d"
+  "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/FileHandler/FileHandler.cpp" "CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o.d"
+  "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/FileHandler/functions.cpp" "CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o.d"
+  "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/IMSI_handler.cpp" "CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o.d"
+  "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/bearer.cpp" "CMakeFiles/pgw_server.dir/PGW/src/bearer.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/PGW/src/bearer.cpp.o.d"
+  "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/control_plane.cpp" "CMakeFiles/pgw_server.dir/PGW/src/control_plane.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/PGW/src/control_plane.cpp.o.d"
+  "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/data_plane.cpp" "CMakeFiles/pgw_server.dir/PGW/src/data_plane.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/PGW/src/data_plane.cpp.o.d"
+  "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/pdn_connection.cpp" "CMakeFiles/pgw_server.dir/PGW/src/pdn_connection.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/PGW/src/pdn_connection.cpp.o.d"
+  "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/rate_limiter.cpp" "CMakeFiles/pgw_server.dir/PGW/src/rate_limiter.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/PGW/src/rate_limiter.cpp.o.d"
   "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/server.cpp" "CMakeFiles/pgw_server.dir/server.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/server.cpp.o.d"
   "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/server_main.cpp" "CMakeFiles/pgw_server.dir/server_main.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/server_main.cpp.o.d"
   )

@@ -14,11 +14,16 @@
 #include <random>
 #include <memory>
 #include <algorithm>
+#include <fstream>
+
+#include "../json.hpp"
+
+using nlohmann::json;
 
 class UDPClient {
 public:
     
-    UDPClient(const std::string& server_ip, int server_port);
+    UDPClient();
 
     ~UDPClient();
 
@@ -35,7 +40,12 @@ private:
     int client_fd;
     sockaddr_in server_addr;
 
+    std::string log_file;
+    std::string log_level;
+
     void create_socket();
 
     void setup_server_address();
+
+    void parse_client_config();
 };

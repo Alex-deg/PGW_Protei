@@ -1,16 +1,9 @@
 #include "client.h"
 
 int main(int argc, char* argv[]) {
-    if (argc != 3) {
-        std::cerr << "Usage: " << argv[0] << " <server_ip> <server_port>" << std::endl;
-        return 1;
-    }
-
     try {
-        std::string server_ip = argv[1];
-        int server_port = std::stoi(argv[2]);
 
-        UDPClient client(server_ip, server_port);
+        UDPClient client;
 
         while (true) { // Добавить IMSI (15 цифр)
             std::cout << "Enter IMSI (or 'quit' to exit): ";

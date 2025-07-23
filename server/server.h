@@ -17,8 +17,9 @@
 #include <string>
 #include <ctime>
 
-#include "../PGW/src/IMSI_handler.h"
-#include "../FileHandler/FileHandler.h"
+#include "PGW/src/IMSI_handler.h"
+#include "PGW/src/data_plane.h"
+#include "FileHandler/FileHandler.h"
 #include "../json.hpp"
 
 using nlohmann::json;
@@ -26,7 +27,7 @@ using nlohmann::json;
 class UDPServer {
 public:
 
-    UDPServer(int port);
+    UDPServer();
     void run();
     ~UDPServer();
     
@@ -35,9 +36,22 @@ private:
     static const int MAX_EVENTS = 10;
     static const int BUF_SIZE = 1024;
     
-    int port;
+    std::string udp_ip;
+    int server_port;
     int epoll_fd;
     int server_fd;
+
+    std::string log_file;
+    std::string log_level;
+
+    std::string black_list;
+
+    int session_timeout_sec;
+    std::string cdr_file;
+    int http_port;
+    int graceful_shutdown_rate;
+
+    data_plane &_data_plane;
 
     IMSI imsi;
     FileHandler cdr;
@@ -46,6 +60,8 @@ private:
     void createSocket();
     void setupEpoll();
     void handleClientData(int fd);
+
+    void parse_server_config();
 
     int set_nonblocking(int fd);
 

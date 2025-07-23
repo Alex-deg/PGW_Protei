@@ -21,8 +21,6 @@ FileHandler::~FileHandler(){
 }
 
 void FileHandler::writeLine(std::string data){
-    std::cout << "writing in file..." << std::endl;
-    std::cout << "data : " << data << std::endl;
     file.seekp(0, std::ios::end);
     file << '\n' + data;
 }

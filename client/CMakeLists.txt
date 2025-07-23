@@ -9,6 +9,7 @@ set(SOURCES
 
 set(HEADERS 
     client.h
+    ../json.hpp
 )
 
 add_executable(pgw_client ${SOURCES} ${HEADERS})

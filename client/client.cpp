@@ -1,9 +1,8 @@
 #include "client.h"
 
-UDPClient::UDPClient(const std::string& server_ip, int server_port) 
+UDPClient::UDPClient() 
     : client_fd(-1) {
-    this->server_ip = server_ip;
-    this->server_port = server_port;
+    parse_client_config();
     create_socket();
     setup_server_address();
 }
@@ -75,4 +74,13 @@ void UDPClient::setup_server_address() {
         close(client_fd);
         throw std::runtime_error("Invalid server address");
     }
+}
+
+void UDPClient::parse_client_config(){
+    std::ifstream json_file_stream("../client_config.json");
+    json data = json::parse(json_file_stream);
+    server_ip = data["server_ip"].get<std::string>();
+    server_port = data["server_port"].get<unsigned int>();
+    log_file = data["log_file"].get<std::string>();
+    log_level = data["log_level"].get<std::string>();
 }
