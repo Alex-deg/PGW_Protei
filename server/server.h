@@ -23,6 +23,7 @@
 #include "FileHandler/FileHandler.h"
 #include "../json.hpp"
 #include "../BCD/bcd.h"
+#include "../httplib.h"
 
 using nlohmann::json;
 
@@ -32,7 +33,7 @@ using nlohmann::json;
 class UDPServer {
 public:
 
-    UDPServer();
+    UDPServer(std::shared_ptr<std::unordered_map<std::string, std::shared_ptr<session>>> sessions);
     void run();
     ~UDPServer();
     

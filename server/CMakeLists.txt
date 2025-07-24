@@ -24,6 +24,7 @@ set(HEADERS
     FileHandler/FileHandler.h
     FileHandler/functions.h
     ../json.hpp
+    ../httplib.h
 )
 
 add_executable(pgw_server ${SOURCES} ${HEADERS})

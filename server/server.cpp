@@ -1,10 +1,11 @@
 #include "server.h"
 
-UDPServer::UDPServer(){
+UDPServer::UDPServer(std::shared_ptr<std::unordered_map<std::string, std::shared_ptr<session>>> sessions){
     parse_server_config();
     cdr = std::make_shared<FileHandler>(cdr_file);
     cp = std::make_shared<control_plane>(black_list);
     dp = std::make_shared<data_plane>(cp);
+    sessions = std::make_shared<std::unordered_map<std::string, std::shared_ptr<session>>>(cp->get_sessions());
     epoll_fd = -1;
     server_fd = -1;
     createSocket();

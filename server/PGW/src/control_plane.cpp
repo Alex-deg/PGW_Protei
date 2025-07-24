@@ -36,3 +36,8 @@ std::pair<std::shared_ptr<session>, std::string> control_plane::create_session(c
 }
 
 void control_plane::delete_session(const std::string &imsi) { sessions.erase(imsi); }
+
+std::unordered_map<std::string, std::shared_ptr<session>> control_plane::get_sessions()
+{
+    return sessions;
+}
