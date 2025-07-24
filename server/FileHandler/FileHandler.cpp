@@ -4,6 +4,9 @@ FileHandler::FileHandler(std::string path){
     //path = checkPath(); // ? Может быть сделать bash скрипт для создания журнала
     this->path = path;
     file.open(path, std::ios::in | std::ios::out);
+    if(file.is_open())
+        std::cout << "success with " + path << std::endl;
+    else std::cout << ":( with " + path << std::endl;
 }
 
 std::string FileHandler::readLine()
@@ -23,6 +26,10 @@ FileHandler::~FileHandler(){
 void FileHandler::writeLine(std::string data){
     file.seekp(0, std::ios::end);
     file << '\n' + data;
+}
+
+void FileHandler::setPath(std::string path){
+    this->path = path;
 }
 
 void FileHandler::resetOffset(){

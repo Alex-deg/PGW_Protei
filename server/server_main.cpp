@@ -1,5 +1,8 @@
 #include "server.h"
 
+// Возможно лучше здесь распарсить конфиг и просто передавать настройки в конструктор 
+
+
 int main(int argc, char* argv[]) {
     try {
         system("bash ../scripts/generate_blacklist.sh");

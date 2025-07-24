@@ -26,6 +26,9 @@
 
 using nlohmann::json;
 
+
+// СДЕЛАТЬ НЕ ЛОКАЛЬНЫЕ ПУТИ
+
 class UDPServer {
 public:
 
@@ -53,11 +56,11 @@ private:
     int http_port;
     int graceful_shutdown_rate;
 
-    std::shared_ptr<control_plane> cp = std::make_shared<control_plane>();
+    std::shared_ptr<control_plane> cp;
     std::shared_ptr<data_plane> dp;
 
     IMSI imsi;
-    FileHandler cdr;
+    std::shared_ptr<FileHandler> cdr;
     //std::vector<struct epoll_event> events_{MAX_EVENTS};
 
     void createSocket();

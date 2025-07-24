@@ -12,6 +12,7 @@ public:
     FileHandler(std::string path = "../../Data/CDR_journal.csv");
     std::string readLine();
     void writeLine(std::string data);
+    void setPath(std::string path);
     void resetOffset();
     ~FileHandler();
 private:

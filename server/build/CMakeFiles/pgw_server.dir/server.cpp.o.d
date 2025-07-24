@@ -220,12 +220,12 @@ CMakeFiles/pgw_server.dir/server.cpp.o: \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h \
  /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/session.h \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/FileHandler/FileHandler.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../FileHandler/FileHandler.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/FileHandler/functions.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../FileHandler/functions.h \
  /home/alex/Протей/Выпускная_работа/PGW_Protei/server/../json.hpp \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \

@@ -2,6 +2,8 @@
 
 UDPServer::UDPServer(){
     parse_server_config();
+    cdr = std::make_shared<FileHandler>(cdr_file);
+    cp = std::make_shared<control_plane>(black_list);
     dp = std::make_shared<data_plane>(cp);
     epoll_fd = -1;
     server_fd = -1;
@@ -95,8 +97,6 @@ void UDPServer::handleClientData(int fd) {
 
         std::string message = BCD::decode_imsi(buffer);
 
-        std::string response = "Echo: ";
-
         std::time_t currentTime = std::time(nullptr);
         std::tm localTime = *std::localtime(&currentTime);
         std::string now = std::ctime(&currentTime);
@@ -104,27 +104,27 @@ void UDPServer::handleClientData(int fd) {
         now += ","+message+",";
 
         // Обработка полученных данных
-        if(imsi.setIMSI(message)){
 
-            cdr.writeLine(now+"connection is successful");
+        auto result = dp->handle_packet(message);
 
-            char client_ip[INET_ADDRSTRLEN];
-            inet_ntop(AF_INET, &client_addr.sin_addr, client_ip, INET_ADDRSTRLEN);
+        if(result.first){
+            cdr->writeLine(now+result.second);
+
+            // char client_ip[INET_ADDRSTRLEN];
+            // inet_ntop(AF_INET, &client_addr.sin_addr, client_ip, INET_ADDRSTRLEN);
             
-            std::cout << "Received from " << client_ip << ":" << ntohs(client_addr.sin_port)
-                        << " - " << message << std::endl;
-            response += message;
+            // std::cout << "Received from " << client_ip << ":" << ntohs(client_addr.sin_port)
+            //             << " - " << message << std::endl;
+            // response += message;
 
         }
         else{
-            cdr.writeLine(now+"connection is wrong");
-            response += "Your IMSI isn't correct";
+            cdr->writeLine(now+result.second);
         }
         
         // Разобраться с типом буфера
-        std::string packet_result = dp->handle_packet(BCD::decode_imsi(buffer));
-        response = packet_result + ": "+ response;
-        sendto(server_fd, response.c_str(), response.size(), 0,
+        
+        sendto(server_fd, result.second.c_str(), result.second.size(), 0,
                 (struct sockaddr*)&client_addr, client_len);
     }
 }

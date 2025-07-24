@@ -5,12 +5,12 @@
 
 // стоит ли хранить сессии в массиве?
 
-std::string data_plane::handle_packet(const std::string &imsi) {
-    std::shared_ptr result = cp->create_session(imsi);
-    if (!result) {
-        return "rejected";
+std::pair<bool, std::string> data_plane::handle_packet(const std::string &imsi) {
+    auto res = cp->create_session(imsi);
+    if (!res.first) {
+        return {false, "rejected: " + res.second};
     }
-    return "created";
+    return {true, "created: " + res.second};
 }
 
 data_plane::data_plane(std::shared_ptr<control_plane> cp){
