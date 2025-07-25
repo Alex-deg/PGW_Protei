@@ -33,7 +33,7 @@ using nlohmann::json;
 class UDPServer {
 public:
 
-    UDPServer(std::shared_ptr<std::unordered_map<std::string, std::shared_ptr<session>>> sessions);
+    UDPServer(std::unordered_map<std::string, std::shared_ptr<session>>*& sessions);
     void run();
     ~UDPServer();
     
