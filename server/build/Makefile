@@ -177,6 +177,30 @@ FileHandler/functions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.s
 .PHONY : FileHandler/functions.cpp.s
 
+Logger/logger.o: Logger/logger.cpp.o
+.PHONY : Logger/logger.o
+
+# target to build an object file
+Logger/logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/Logger/logger.cpp.o
+.PHONY : Logger/logger.cpp.o
+
+Logger/logger.i: Logger/logger.cpp.i
+.PHONY : Logger/logger.i
+
+# target to preprocess a source file
+Logger/logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/Logger/logger.cpp.i
+.PHONY : Logger/logger.cpp.i
+
+Logger/logger.s: Logger/logger.cpp.s
+.PHONY : Logger/logger.s
+
+# target to generate assembly for a file
+Logger/logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/Logger/logger.cpp.s
+.PHONY : Logger/logger.cpp.s
+
 PGW/src/IMSI_handler.o: PGW/src/IMSI_handler.cpp.o
 .PHONY : PGW/src/IMSI_handler.o
 
@@ -360,6 +384,9 @@ help:
 	@echo "... FileHandler/functions.o"
 	@echo "... FileHandler/functions.i"
 	@echo "... FileHandler/functions.s"
+	@echo "... Logger/logger.o"
+	@echo "... Logger/logger.i"
+	@echo "... Logger/logger.s"
 	@echo "... PGW/src/IMSI_handler.o"
 	@echo "... PGW/src/IMSI_handler.i"
 	@echo "... PGW/src/IMSI_handler.s"

@@ -24,6 +24,7 @@
 #include "../json.hpp"
 #include "../BCD/bcd.h"
 #include "../httplib.h"
+#include "Logger/logger.h"
 
 using nlohmann::json;
 

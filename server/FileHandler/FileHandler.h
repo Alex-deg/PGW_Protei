@@ -4,6 +4,7 @@
 #include <fstream>
 #include <iostream>
 #include "functions.h"
+#include "../Logger/logger.h"
 
 // Реализовать логику .csv файла и настроить вывод
 

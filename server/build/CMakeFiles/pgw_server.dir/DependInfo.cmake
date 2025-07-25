@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/FileHandler/FileHandler.cpp" "CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o.d"
   "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/FileHandler/functions.cpp" "CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o.d"
+  "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/Logger/logger.cpp" "CMakeFiles/pgw_server.dir/Logger/logger.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/Logger/logger.cpp.o.d"
   "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/IMSI_handler.cpp" "CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o.d"
   "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/control_plane.cpp" "CMakeFiles/pgw_server.dir/PGW/src/control_plane.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/PGW/src/control_plane.cpp.o.d"
   "/home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/data_plane.cpp" "CMakeFiles/pgw_server.dir/PGW/src/data_plane.cpp.o" "gcc" "CMakeFiles/pgw_server.dir/PGW/src/data_plane.cpp.o.d"

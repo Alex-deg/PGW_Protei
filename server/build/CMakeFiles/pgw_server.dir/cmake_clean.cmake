@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o.d"
   "CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o"
   "CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o.d"
+  "CMakeFiles/pgw_server.dir/Logger/logger.cpp.o"
+  "CMakeFiles/pgw_server.dir/Logger/logger.cpp.o.d"
   "CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o"
   "CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o.d"
   "CMakeFiles/pgw_server.dir/PGW/src/control_plane.cpp.o"

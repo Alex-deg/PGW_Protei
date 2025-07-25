@@ -6,6 +6,7 @@
 #include <unordered_map>
 #include "session.h"
 #include "../../FileHandler/FileHandler.h"
+#include "../../Logger/logger.h"
 
 class control_plane {
 public:

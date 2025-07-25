@@ -5,7 +5,7 @@
   "cdr_file": "../Data/CDR_journal.csv",
   "http_port": 8080,
   "graceful_shutdown_rate": 10,
-  "log_file": "pgw.log",
+  "log_file": "../Data/pgw.log",
   "log_level": "INFO",
   "blacklist": "../Data/IMSI_blacklist.txt"
 }
