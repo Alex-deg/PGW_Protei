@@ -220,6 +220,8 @@ pgw_server: CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/build.make
+pgw_server: /usr/lib/x86_64-linux-gnu/libspdlog.so.1.12.0
+pgw_server: /usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0
 pgw_server: CMakeFiles/pgw_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable pgw_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pgw_server.dir/link.txt --verbose=$(VERBOSE)

@@ -529,3 +529,42 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/spdlog/spdlogConfig.cmake:40 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0412\u044b\u043f\u0443\u0441\u043a\u043d\u0430\u044f_\u0440\u0430\u0431\u043e\u0442\u0430/PGW_Protei/server/build/CMakeFiles/CMakeScratch/TryCompile-1Q4Wus"
+      binary: "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0412\u044b\u043f\u0443\u0441\u043a\u043d\u0430\u044f_\u0440\u0430\u0431\u043e\u0442\u0430/PGW_Protei/server/build/CMakeFiles/CMakeScratch/TryCompile-1Q4Wus"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles/CMakeScratch/TryCompile-1Q4Wus'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_94c0e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_94c0e.dir/build.make CMakeFiles/cmTC_94c0e.dir/build
+        gmake[1]: вход в каталог «/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles/CMakeScratch/TryCompile-1Q4Wus»
+        Building C object CMakeFiles/cmTC_94c0e.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_94c0e.dir/src.c.o -c /home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles/CMakeScratch/TryCompile-1Q4Wus/src.c
+        Linking C executable cmTC_94c0e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94c0e.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_94c0e.dir/src.c.o -o cmTC_94c0e 
+        gmake[1]: выход из каталога «/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles/CMakeScratch/TryCompile-1Q4Wus»
+        
+      exitCode: 0
+...
