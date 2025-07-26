@@ -1,16 +1,18 @@
 #pragma once
 
+#include <iostream>
+#include <fstream>
 #include <string>
 #include "../json.hpp"
 
 using nlohmann::json;
 
-class config_parser{
-
+class config_parser {
 public:
-    config_parser(const std::string &path);
-private:
+    config_parser(const std::string& filename = "config.json");
     template<typename T>
-    T config_parser::extract_value(const nlohmann::json &json, std::string_view key);
-
+    static T get(const std::string& key);
+    bool has(const std::string& key) const;
+private:
+    json data;
 };

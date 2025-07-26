@@ -1,7 +1,6 @@
 #include "FileHandler.h"
 
 FileHandler::FileHandler(std::string path){
-    //path = checkPath(); // ? Может быть сделать bash скрипт для создания журнала
     this->path = path;
     file.open(path, std::ios::in | std::ios::out);
     if(file.is_open()){

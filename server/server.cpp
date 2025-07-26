@@ -1,16 +1,15 @@
 #include "server.h"
 
-UDPServer::UDPServer(std::unordered_map<std::string, std::shared_ptr<session>>*& sessions){
-
-    parse_server_config();
-    Logger::init(log_file);
-    std::cout << log_file << std::endl;
-    Logger::info("Парсинг json файла");
-    cdr = std::make_shared<FileHandler>(cdr_file);
-    cp = std::make_shared<control_plane>(black_list);
+UDPServer::UDPServer(std::unordered_map<std::string, std::shared_ptr<session>>*& sessions,
+                     config_parser &config){
+    this->config = config;
+    Logger::init(config.get<std::string>("log_file"));
+    Logger::set_level(config.get<std::string>("log_level"));
+    cdr = std::make_shared<FileHandler>(config.get<std::string>("cdr_file"));
+    cp = std::make_shared<control_plane>(config.get<std::string>("blacklist"));
     dp = std::make_shared<data_plane>(cp);
     sessions = cp->get_sessions();
-   
+
     epoll_fd = -1;
     server_fd = -1;
     createSocket();
@@ -24,7 +23,7 @@ UDPServer::~UDPServer() {
 }
 
 void UDPServer::run() {
-    std::cout << "UDP server running on server_port " << server_port << "..." << std::endl;
+    std::cout << "UDP server running on server_port " << config.get<int>("udp_port") << "..." << std::endl;
     Logger::info("Сервер запущен");
     struct epoll_event events[MAX_EVENTS];
 
@@ -51,7 +50,6 @@ void UDPServer::createSocket() {
         throw std::runtime_error("Не удалось создать сокет");
     }
 
-    // ???
     int opt = 1;
     if (setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt))) {
         Logger::error("setsockopt failed");
@@ -120,13 +118,9 @@ void UDPServer::handleClientData(int fd) {
         now.pop_back();
         now += ","+message+",";
 
-        // Обработка полученных данных
-
         auto result = dp->handle_packet(message);
 
         cdr->writeLine(now+result.second);
-        
-        // Разобраться с типом буфера
         
         sendto(server_fd, result.second.c_str(), result.second.size(), 0,
                 (struct sockaddr*)&client_addr, client_len);
@@ -140,18 +134,4 @@ int UDPServer::set_nonblocking(int fd)
     int flags = fcntl(fd, F_GETFL, 0);
     if(flags == -1) return -1;
     return fcntl(fd, F_SETFL, flags | O_NONBLOCK);
-}
-
-void UDPServer::parse_server_config(){
-    std::ifstream json_file_stream("../server_config.json");
-    json data = json::parse(json_file_stream);
-    udp_ip = data["udp_ip"].get<std::string>();
-    server_port = data["udp_port"].get<unsigned int>();
-    session_timeout_sec = data["session_timeout_sec"].get<unsigned int>();
-    cdr_file = data["cdr_file"].get<std::string>();
-    http_port = data["http_port"].get<unsigned int>();
-    graceful_shutdown_rate = data["graceful_shutdown_rate"].get<unsigned int>();
-    log_file = data["log_file"].get<std::string>();
-    log_level = data["log_level"].get<std::string>();
-    black_list = data["blacklist"].get<std::string>();
 }

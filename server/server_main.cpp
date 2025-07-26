@@ -1,4 +1,5 @@
 #include "server.h"
+#include "ConfigParser/config_parser.h"
 
 #include <thread>
 
@@ -37,7 +38,7 @@ void check_sessions_ttl(int ttl_seconds) {
     }
 }
 
-void run_http_server() {
+void run_http_server(int shd_rate) {
 
     httplib::Server http_server;
 
@@ -68,8 +69,8 @@ void run_http_server() {
     http_server.listen("0.0.0.0", 8080);
 }
 
-void run_udp_server(){
-    UDPServer server(sessions);
+void run_udp_server(config_parser &cp){
+    UDPServer server(sessions, cp);
     server.run();
 }
 
@@ -78,12 +79,14 @@ int main(int argc, char* argv[]) {
         system("bash ../scripts/clear_data_files.sh");
         system("bash ../scripts/generate_blacklist.sh");
         
-        std::thread ttl_thread(check_sessions_ttl, 20);
+        config_parser cp("server_config.json");
+        
+        std::thread ttl_thread(check_sessions_ttl, cp.get<int>("session_timeout_sec"));
         ttl_thread.detach();
 
-        std::thread udp_thread(run_udp_server);
+        std::thread udp_thread(run_udp_server, cp);
 
-        std::thread http_thread(run_http_server);
+        std::thread http_thread(run_http_server, cp.get<int>("graceful_shutdown_rate"));
 
         udp_thread.join();
         http_thread.join();

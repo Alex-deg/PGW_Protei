@@ -14,7 +14,7 @@
 
 class Logger {
 public:
-    // Уровни логирования
+
     enum class Level {
         Debug,
         Info,
@@ -23,22 +23,17 @@ public:
         Critical
     };
 
-    // Инициализация логгера (консоль + файл)
     static void init(const std::string& logFilePath = "logs/log.txt");
 
-    // Логирование с указанным уровнем
     static void log(Level level, const std::string& message);
-
-    // Удобные методы для каждого уровня
+    
     static void debug(const std::string& message);
     static void info(const std::string& message);
     static void warn(const std::string& message);
     static void error(const std::string& message);
     static void critical(const std::string& message);
+    static void Logger::set_level(const std::string& level);
 
-    static void flush();
-    
 private:
-    void auto_rotation(const std::string& logFilePath);
     static std::shared_ptr<spdlog::logger> logger_;
 };
