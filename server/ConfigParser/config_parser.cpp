@@ -8,11 +8,6 @@ config_parser::config_parser(const std::string& filename) {
     file >> data;
 }
 
-template<typename T>
-T config_parser::get(const std::string& key){
-    return data[key].get<T>();
-}
-
 bool config_parser::has(const std::string& key) const {
     return data.contains(key);
 }

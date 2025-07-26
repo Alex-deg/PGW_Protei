@@ -5,6 +5,7 @@ UDPClient::UDPClient()
     parse_client_config();
     create_socket();
     setup_server_address();
+    
 }
 
 UDPClient::~UDPClient() {

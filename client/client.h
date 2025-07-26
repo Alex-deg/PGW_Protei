@@ -17,6 +17,7 @@
 #include <fstream>
 
 #include "../json.hpp"
+#include "../server/Logger/logger.h"
 
 using nlohmann::json;
 

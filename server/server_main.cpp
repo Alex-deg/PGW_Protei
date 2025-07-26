@@ -3,13 +3,40 @@
 
 #include <thread>
 
-// Возможно лучше здесь распарсить конфиг и просто передавать настройки в конструктор 
-
-// добавить mutex
 std::mutex udp_data_mutex; 
-std::unordered_map<std::string, std::shared_ptr<session>>* sessions;
+std::unordered_map<std::string, std::shared_ptr<session>>* sessions = nullptr;
+std::shared_ptr<FileHandler> cdr = nullptr;
 
 std::mutex sessions_mutex;
+
+std::atomic<bool> is_shutting_down(false);
+
+void graceful_shutdown(std::unordered_map<std::string, std::shared_ptr<session>>* sessions, 
+                       int speed) {
+    while (!sessions->empty()) {
+        
+
+        std::time_t currentTime = std::time(nullptr);
+        std::tm localTime = *std::localtime(&currentTime);
+        std::string now = std::ctime(&currentTime);
+        now.pop_back();
+
+        for (int i = 0; i < speed && !sessions->empty(); ++i) {
+            auto it = sessions->begin();
+            std::string imsi = it->first;
+            
+            cdr->writeLine(now + "," + imsi + "," + "deleted: IMSI = " + imsi);
+            
+            sessions->erase(it);
+        }
+        
+        
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    }
+    
+    exit(0); 
+}
+
 
 void check_sessions_ttl(int ttl_seconds) {
     while (true) {
@@ -53,23 +80,25 @@ void run_http_server(int shd_rate) {
         }
     });
 
-    http_server.Post("/stop", [](const httplib::Request& req, httplib::Response& res) {
-        static std::atomic<bool> is_shutting_down(false);
+    http_server.Post("/stop", [&](const httplib::Request& req, httplib::Response& res) {
         if (is_shutting_down) {
             res.status = 400;
-            res.set_content("Shutdown already in progress\n", "text/plain");
+            res.set_content("Shutdown already in progress", "text/plain");
             return;
         }
+
+        int speed = shd_rate;
         is_shutting_down = true;
-        std::thread([]() { exit(0); }).detach(); // Упрощенный shutdown реализовать посложнее
-        res.set_content("Graceful shutdown started\n", "text/plain");
+        std::thread(graceful_shutdown, sessions, speed).detach();
+        
+        res.set_content("Graceful shutdown started", "text/plain");
     });
 
     std::cout << "HTTP Server started on port 8080" << std::endl;
     http_server.listen("0.0.0.0", 8080);
 }
 
-void run_udp_server(config_parser &cp){
+void run_udp_server(const UDPServer &server){
     UDPServer server(sessions, cp);
     server.run();
 }
@@ -79,14 +108,19 @@ int main(int argc, char* argv[]) {
         system("bash ../scripts/clear_data_files.sh");
         system("bash ../scripts/generate_blacklist.sh");
         
-        config_parser cp("server_config.json");
+        std::shared_ptr<config_parser> cp = std::make_shared<config_parser>("../server_config.json");
         
-        std::thread ttl_thread(check_sessions_ttl, cp.get<int>("session_timeout_sec"));
+        UDPServer server(cp);
+
+        sessions = server.get_cp_sessions();
+        cdr = server.get_cdr_journal();
+
+        std::thread ttl_thread(check_sessions_ttl, cp->get<int>("session_timeout_sec"));
         ttl_thread.detach();
 
-        std::thread udp_thread(run_udp_server, cp);
+        std::thread udp_thread(run_udp_server, std::ref(server));
 
-        std::thread http_thread(run_http_server, cp.get<int>("graceful_shutdown_rate"));
+        std::thread http_thread(run_http_server, cp->get<int>("graceful_shutdown_rate"));
 
         udp_thread.join();
         http_thread.join();

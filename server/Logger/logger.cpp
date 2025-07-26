@@ -24,10 +24,11 @@ void Logger::init(const std::string& logFilePath) {
 }
 
 void Logger::set_level(const std::string& level){
-    std::string lv;
+    std::string lv = "";
     for(int i = 0; i < level.size(); i++){
-        lv[i] = std::tolower(level[i]);
+        lv += std::tolower(level[i]);
     }
+    std::cout << lv << std::endl;
     if(lv == "debug"){
         logger_->set_level(spdlog::level::debug);
         return;

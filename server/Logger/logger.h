@@ -32,7 +32,7 @@ public:
     static void warn(const std::string& message);
     static void error(const std::string& message);
     static void critical(const std::string& message);
-    static void Logger::set_level(const std::string& level);
+    static void set_level(const std::string& level);
 
 private:
     static std::shared_ptr<spdlog::logger> logger_;

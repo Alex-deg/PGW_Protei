@@ -1,14 +1,13 @@
 #include "server.h"
 
-UDPServer::UDPServer(std::unordered_map<std::string, std::shared_ptr<session>>*& sessions,
-                     config_parser &config){
+UDPServer::UDPServer(std::shared_ptr<config_parser> config){
     this->config = config;
-    Logger::init(config.get<std::string>("log_file"));
-    Logger::set_level(config.get<std::string>("log_level"));
-    cdr = std::make_shared<FileHandler>(config.get<std::string>("cdr_file"));
-    cp = std::make_shared<control_plane>(config.get<std::string>("blacklist"));
+    Logger::init(config->get<std::string>("log_file"));
+    Logger::set_level(config->get<std::string>("log_level"));
+    this->cdr = std::make_shared<FileHandler>(config->get<std::string>("cdr_file"));
+    
+    cp = std::make_shared<control_plane>(config->get<std::string>("blacklist"));
     dp = std::make_shared<data_plane>(cp);
-    sessions = cp->get_sessions();
 
     epoll_fd = -1;
     server_fd = -1;
@@ -22,8 +21,18 @@ UDPServer::~UDPServer() {
     Logger::info("Завершение работы сервера");
 }
 
+std::unordered_map<std::string, std::shared_ptr<session>> *UDPServer::get_cp_sessions()
+{
+    return cp->get_sessions();
+}
+
+std::shared_ptr<FileHandler> UDPServer::get_cdr_journal()
+{
+    return cdr;
+}
+
 void UDPServer::run() {
-    std::cout << "UDP server running on server_port " << config.get<int>("udp_port") << "..." << std::endl;
+    std::cout << "UDP server running on server_port " << config->get<int>("udp_port") << "..." << std::endl;
     Logger::info("Сервер запущен");
     struct epoll_event events[MAX_EVENTS];
 
@@ -59,7 +68,7 @@ void UDPServer::createSocket() {
     struct sockaddr_in address{};
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = INADDR_ANY;
-    address.sin_port = htons(server_port);
+    address.sin_port = htons(config->get<int>("udp_port"));
 
     if (bind(server_fd, (struct sockaddr*)&address, sizeof(address))) {
         close(server_fd);

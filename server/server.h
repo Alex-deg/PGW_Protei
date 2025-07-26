@@ -32,10 +32,13 @@ using nlohmann::json;
 class UDPServer {
 public:
 
-    UDPServer(std::unordered_map<std::string, std::shared_ptr<session>>*& sessions,
-              config_parser &config);
+    UDPServer(std::shared_ptr<config_parser> config);
     void run();
     ~UDPServer();
+
+    // Геттеры
+    std::unordered_map<std::string, std::shared_ptr<session>>* get_cp_sessions();
+    std::shared_ptr<FileHandler> get_cdr_journal();
     
 private:
 
@@ -44,7 +47,7 @@ private:
     static const int MAX_EVENTS = 10;
     static const int BUF_SIZE = 1024;
     // Config settings
-    config_parser config;
+    std::shared_ptr<config_parser> config;
     // Aux values
     int epoll_fd;
     int server_fd;
