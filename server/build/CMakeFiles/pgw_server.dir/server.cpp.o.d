@@ -205,10 +205,7 @@ CMakeFiles/pgw_server.dir/server.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/c++/13/stack /usr/include/c++/13/deque \
- /usr/include/c++/13/bits/stl_deque.h /usr/include/c++/13/bits/deque.tcc \
- /usr/include/c++/13/bits/stl_stack.h /usr/include/c++/13/ctime \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/IMSI_handler.h \
+ /usr/include/c++/13/ctime \
  /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/data_plane.h \
  /usr/include/c++/13/cstdint /usr/include/c++/13/expected \
  /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/control_plane.h \
@@ -367,7 +364,10 @@ CMakeFiles/pgw_server.dir/server.cpp.o: \
  /usr/include/c++/13/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
  /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/regex \
- /usr/include/c++/13/bitset /usr/include/c++/13/bits/regex_constants.h \
+ /usr/include/c++/13/bitset /usr/include/c++/13/stack \
+ /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
+ /usr/include/c++/13/bits/deque.tcc /usr/include/c++/13/bits/stl_stack.h \
+ /usr/include/c++/13/bits/regex_constants.h \
  /usr/include/c++/13/bits/regex_error.h \
  /usr/include/c++/13/bits/regex_automaton.h \
  /usr/include/c++/13/bits/regex_automaton.tcc \
@@ -388,4 +388,6 @@ CMakeFiles/pgw_server.dir/server.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
  /usr/include/c++/13/unordered_set \
- /usr/include/c++/13/bits/unordered_set.h
+ /usr/include/c++/13/bits/unordered_set.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/ConfigParser/config_parser.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/ConfigParser/../../json.hpp

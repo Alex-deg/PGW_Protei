@@ -129,6 +129,30 @@ pgw_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/build
 .PHONY : pgw_server/fast
 
+ConfigParser/config_parser.o: ConfigParser/config_parser.cpp.o
+.PHONY : ConfigParser/config_parser.o
+
+# target to build an object file
+ConfigParser/config_parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.o
+.PHONY : ConfigParser/config_parser.cpp.o
+
+ConfigParser/config_parser.i: ConfigParser/config_parser.cpp.i
+.PHONY : ConfigParser/config_parser.i
+
+# target to preprocess a source file
+ConfigParser/config_parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.i
+.PHONY : ConfigParser/config_parser.cpp.i
+
+ConfigParser/config_parser.s: ConfigParser/config_parser.cpp.s
+.PHONY : ConfigParser/config_parser.s
+
+# target to generate assembly for a file
+ConfigParser/config_parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.s
+.PHONY : ConfigParser/config_parser.cpp.s
+
 FileHandler/FileHandler.o: FileHandler/FileHandler.cpp.o
 .PHONY : FileHandler/FileHandler.o
 
@@ -200,30 +224,6 @@ Logger/logger.s: Logger/logger.cpp.s
 Logger/logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/Logger/logger.cpp.s
 .PHONY : Logger/logger.cpp.s
-
-PGW/src/IMSI_handler.o: PGW/src/IMSI_handler.cpp.o
-.PHONY : PGW/src/IMSI_handler.o
-
-# target to build an object file
-PGW/src/IMSI_handler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o
-.PHONY : PGW/src/IMSI_handler.cpp.o
-
-PGW/src/IMSI_handler.i: PGW/src/IMSI_handler.cpp.i
-.PHONY : PGW/src/IMSI_handler.i
-
-# target to preprocess a source file
-PGW/src/IMSI_handler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.i
-.PHONY : PGW/src/IMSI_handler.cpp.i
-
-PGW/src/IMSI_handler.s: PGW/src/IMSI_handler.cpp.s
-.PHONY : PGW/src/IMSI_handler.s
-
-# target to generate assembly for a file
-PGW/src/IMSI_handler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_server.dir/build.make CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.s
-.PHONY : PGW/src/IMSI_handler.cpp.s
 
 PGW/src/control_plane.o: PGW/src/control_plane.cpp.o
 .PHONY : PGW/src/control_plane.o
@@ -378,6 +378,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pgw_server"
+	@echo "... ConfigParser/config_parser.o"
+	@echo "... ConfigParser/config_parser.i"
+	@echo "... ConfigParser/config_parser.s"
 	@echo "... FileHandler/FileHandler.o"
 	@echo "... FileHandler/FileHandler.i"
 	@echo "... FileHandler/FileHandler.s"
@@ -387,9 +390,6 @@ help:
 	@echo "... Logger/logger.o"
 	@echo "... Logger/logger.i"
 	@echo "... Logger/logger.s"
-	@echo "... PGW/src/IMSI_handler.o"
-	@echo "... PGW/src/IMSI_handler.i"
-	@echo "... PGW/src/IMSI_handler.s"
 	@echo "... PGW/src/control_plane.o"
 	@echo "... PGW/src/control_plane.i"
 	@echo "... PGW/src/control_plane.s"

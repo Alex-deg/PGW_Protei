@@ -125,24 +125,10 @@ CMakeFiles/pgw_server.dir/PGW/src/data_plane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pgw_server.dir/PGW/src/data_plane.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/data_plane.cpp -o CMakeFiles/pgw_server.dir/PGW/src/data_plane.cpp.s
 
-CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o: CMakeFiles/pgw_server.dir/flags.make
-CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o: /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/IMSI_handler.cpp
-CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o: CMakeFiles/pgw_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o -MF CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o.d -o CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o -c /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/IMSI_handler.cpp
-
-CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/IMSI_handler.cpp > CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.i
-
-CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/IMSI_handler.cpp -o CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.s
-
 CMakeFiles/pgw_server.dir/PGW/src/session.cpp.o: CMakeFiles/pgw_server.dir/flags.make
 CMakeFiles/pgw_server.dir/PGW/src/session.cpp.o: /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/session.cpp
 CMakeFiles/pgw_server.dir/PGW/src/session.cpp.o: CMakeFiles/pgw_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pgw_server.dir/PGW/src/session.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pgw_server.dir/PGW/src/session.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgw_server.dir/PGW/src/session.cpp.o -MF CMakeFiles/pgw_server.dir/PGW/src/session.cpp.o.d -o CMakeFiles/pgw_server.dir/PGW/src/session.cpp.o -c /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/session.cpp
 
 CMakeFiles/pgw_server.dir/PGW/src/session.cpp.i: cmake_force
@@ -156,7 +142,7 @@ CMakeFiles/pgw_server.dir/PGW/src/session.cpp.s: cmake_force
 CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o: CMakeFiles/pgw_server.dir/flags.make
 CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o: /home/alex/Протей/Выпускная_работа/PGW_Protei/server/FileHandler/FileHandler.cpp
 CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o: CMakeFiles/pgw_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o -MF CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o.d -o CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o -c /home/alex/Протей/Выпускная_работа/PGW_Protei/server/FileHandler/FileHandler.cpp
 
 CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.i: cmake_force
@@ -170,7 +156,7 @@ CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.s: cmake_force
 CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o: CMakeFiles/pgw_server.dir/flags.make
 CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o: /home/alex/Протей/Выпускная_работа/PGW_Protei/server/FileHandler/functions.cpp
 CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o: CMakeFiles/pgw_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o -MF CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o.d -o CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o -c /home/alex/Протей/Выпускная_работа/PGW_Protei/server/FileHandler/functions.cpp
 
 CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.i: cmake_force
@@ -184,7 +170,7 @@ CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.s: cmake_force
 CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o: CMakeFiles/pgw_server.dir/flags.make
 CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o: /home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp
 CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o: CMakeFiles/pgw_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o -MF CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o.d -o CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o -c /home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp
 
 CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.i: cmake_force
@@ -198,7 +184,7 @@ CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа
 CMakeFiles/pgw_server.dir/Logger/logger.cpp.o: CMakeFiles/pgw_server.dir/flags.make
 CMakeFiles/pgw_server.dir/Logger/logger.cpp.o: /home/alex/Протей/Выпускная_работа/PGW_Protei/server/Logger/logger.cpp
 CMakeFiles/pgw_server.dir/Logger/logger.cpp.o: CMakeFiles/pgw_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pgw_server.dir/Logger/logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pgw_server.dir/Logger/logger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgw_server.dir/Logger/logger.cpp.o -MF CMakeFiles/pgw_server.dir/Logger/logger.cpp.o.d -o CMakeFiles/pgw_server.dir/Logger/logger.cpp.o -c /home/alex/Протей/Выпускная_работа/PGW_Protei/server/Logger/logger.cpp
 
 CMakeFiles/pgw_server.dir/Logger/logger.cpp.i: cmake_force
@@ -209,18 +195,32 @@ CMakeFiles/pgw_server.dir/Logger/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pgw_server.dir/Logger/logger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Протей/Выпускная_работа/PGW_Protei/server/Logger/logger.cpp -o CMakeFiles/pgw_server.dir/Logger/logger.cpp.s
 
+CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.o: CMakeFiles/pgw_server.dir/flags.make
+CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.o: /home/alex/Протей/Выпускная_работа/PGW_Protei/server/ConfigParser/config_parser.cpp
+CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.o: CMakeFiles/pgw_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alex/Протей/Выпускная_работа/PGW_Protei/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.o -MF CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.o.d -o CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.o -c /home/alex/Протей/Выпускная_работа/PGW_Protei/server/ConfigParser/config_parser.cpp
+
+CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Протей/Выпускная_работа/PGW_Protei/server/ConfigParser/config_parser.cpp > CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.i
+
+CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Протей/Выпускная_работа/PGW_Protei/server/ConfigParser/config_parser.cpp -o CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.s
+
 # Object files for target pgw_server
 pgw_server_OBJECTS = \
 "CMakeFiles/pgw_server.dir/server_main.cpp.o" \
 "CMakeFiles/pgw_server.dir/server.cpp.o" \
 "CMakeFiles/pgw_server.dir/PGW/src/control_plane.cpp.o" \
 "CMakeFiles/pgw_server.dir/PGW/src/data_plane.cpp.o" \
-"CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o" \
 "CMakeFiles/pgw_server.dir/PGW/src/session.cpp.o" \
 "CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o" \
 "CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o" \
 "CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o" \
-"CMakeFiles/pgw_server.dir/Logger/logger.cpp.o"
+"CMakeFiles/pgw_server.dir/Logger/logger.cpp.o" \
+"CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.o"
 
 # External object files for target pgw_server
 pgw_server_EXTERNAL_OBJECTS =
@@ -229,12 +229,12 @@ pgw_server: CMakeFiles/pgw_server.dir/server_main.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/server.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/PGW/src/control_plane.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/PGW/src/data_plane.cpp.o
-pgw_server: CMakeFiles/pgw_server.dir/PGW/src/IMSI_handler.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/PGW/src/session.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/FileHandler/FileHandler.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/FileHandler/functions.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/home/alex/Протей/Выпускная_работа/PGW_Protei/BCD/bcd.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/Logger/logger.cpp.o
+pgw_server: CMakeFiles/pgw_server.dir/ConfigParser/config_parser.cpp.o
 pgw_server: CMakeFiles/pgw_server.dir/build.make
 pgw_server: /usr/lib/x86_64-linux-gnu/libspdlog.so.1.12.0
 pgw_server: /usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0
