@@ -11,12 +11,14 @@ void Logger::init(const std::string& logFilePath) {
         // Комбинируем сенки
         spdlog::sinks_init_list sinks = {consoleSink, fileSink};
 
+        fileSink->set_level(spdlog::level::info);
+
         // Создаём логгер
         logger_ = std::make_shared<spdlog::logger>("multi_sink", sinks.begin(), sinks.end());
         spdlog::register_logger(logger_);
 
         // Устанавливаем уровень логирования (можно менять)
-        logger_->set_level(spdlog::level::debug);
+        logger_->set_level(spdlog::level::info);
         logger_->flush_on(spdlog::level::err);  // Флашим логи при ошибках
 
         spdlog::set_pattern("[%Y-%m-%d %H:%M:%S.%e] [%^%l%$] %v");
@@ -36,10 +38,22 @@ void Logger::log(Level level, const std::string& message) {
         case Level::Warn:     logger_->warn(message);     break;
         case Level::Error:    logger_->error(message);    break;
         case Level::Critical: logger_->critical(message); break;
+        //default: logger_->flush();
     }
+
+    logger_->flush();
+
 }
 
-// Удобные обёртки
+void Logger::flush(){
+    logger_->flush();
+}
+
+void Logger::auto_rotation(const std::string& logFilePath){
+    std::ifstream file(logFilePath);
+
+}
+
 void Logger::debug(const std::string& message)    { log(Level::Debug, message); }
 void Logger::info(const std::string& message)      { log(Level::Info, message); }
 void Logger::warn(const std::string& message)      { log(Level::Warn, message); }

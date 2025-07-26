@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <fstream>
 #include <chrono>
 #include <ctime>
 #include <iomanip>
@@ -34,7 +35,10 @@ public:
     static void warn(const std::string& message);
     static void error(const std::string& message);
     static void critical(const std::string& message);
+
+    static void flush();
     
 private:
+    void auto_rotation(const std::string& logFilePath);
     static std::shared_ptr<spdlog::logger> logger_;
 };

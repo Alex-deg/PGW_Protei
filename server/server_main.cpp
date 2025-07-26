@@ -75,6 +75,7 @@ void run_udp_server(){
 
 int main(int argc, char* argv[]) {
     try {
+        system("bash ../scripts/clear_data_files.sh");
         system("bash ../scripts/generate_blacklist.sh");
         
         std::thread ttl_thread(check_sessions_ttl, 20);

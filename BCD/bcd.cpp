@@ -4,7 +4,6 @@ std::vector<uint8_t> BCD::encode_imsi(const std::string& imsi) {
     std::vector<uint8_t> bytes;
 
     for (size_t i = 0; i < imsi.size(); i += 2) {
-        std::cout << imsi[i] - '0' << " " << imsi[i+1]-'0' << std::endl;
         uint8_t digit1 = imsi[i] - '0';
         uint8_t digit2 = (i + 1 < imsi.size()) ? imsi[i+1] - '0' : 0xF; // Filler
         bytes.push_back((digit2 << 4) | digit1); // Важно: digit2 — старшие биты!
