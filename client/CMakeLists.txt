@@ -5,13 +5,13 @@ project(pgw_client)
 set(SOURCES 
     client_main.cpp
     client.cpp
-    ../BCD/bcd.cpp
+    ../libs/BCD/bcd.cpp
 )
 
 set(HEADERS 
     client.h
-    ../BCD/bcd.h
-    ../json.hpp
+    ../libs/BCD/bcd.h
+    ../libs/json.hpp
 )
 
 add_executable(pgw_client ${SOURCES} ${HEADERS})

@@ -1,6 +1,6 @@
 #include "client.h"
 
-#include "../BCD/bcd.h"
+#include "../libs/BCD/bcd.h"
 
 int main(int argc, char* argv[]) {
     try {
