@@ -167,7 +167,7 @@ CMakeFiles/pgw_server.dir/PGW/src/control_plane.cpp.o: \
  /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
  /usr/include/c++/13/limits /usr/include/c++/13/ctime \
  /usr/include/c++/13/bits/parse_numbers.h \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../FileHandler/FileHandler.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../../libs/FileHandler/FileHandler.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/istream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \
@@ -189,8 +189,8 @@ CMakeFiles/pgw_server.dir/PGW/src/control_plane.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/iostream \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../FileHandler/functions.h \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../FileHandler/../Logger/logger.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../../libs/FileHandler/functions.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../../libs/FileHandler/../Logger/logger.h \
  /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \

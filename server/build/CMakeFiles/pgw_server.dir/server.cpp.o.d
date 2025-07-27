@@ -220,13 +220,13 @@ CMakeFiles/pgw_server.dir/server.cpp.o: \
  /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
  /usr/include/c++/13/ratio /usr/include/c++/13/limits \
  /usr/include/c++/13/bits/parse_numbers.h \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../FileHandler/FileHandler.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../../libs/FileHandler/FileHandler.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../FileHandler/functions.h \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../FileHandler/../Logger/logger.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../../libs/FileHandler/functions.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/PGW/src/../../../libs/FileHandler/../Logger/logger.h \
  /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
@@ -287,7 +287,7 @@ CMakeFiles/pgw_server.dir/server.cpp.o: \
  /usr/include/spdlog/sinks/basic_file_sink.h \
  /usr/include/spdlog/details/file_helper.h \
  /usr/include/spdlog/sinks/base_sink.h \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/../json.hpp \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/../libs/json.hpp \
  /usr/include/c++/13/algorithm \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/forward_list /usr/include/c++/13/bits/forward_list.h \
@@ -309,8 +309,8 @@ CMakeFiles/pgw_server.dir/server.cpp.o: \
  /usr/include/c++/13/optional /usr/include/c++/13/numeric \
  /usr/include/c++/13/bits/stl_numeric.h \
  /usr/include/c++/13/pstl/glue_numeric_defs.h /usr/include/c++/13/any \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/../BCD/bcd.h \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/../httplib.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/../libs/BCD/bcd.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/../libs/httplib.h \
  /usr/include/ifaddrs.h /usr/include/net/if.h /usr/include/netdb.h \
  /usr/include/rpc/netdb.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
@@ -389,5 +389,5 @@ CMakeFiles/pgw_server.dir/server.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
  /usr/include/c++/13/unordered_set \
  /usr/include/c++/13/bits/unordered_set.h \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/ConfigParser/config_parser.h \
- /home/alex/Протей/Выпускная_работа/PGW_Protei/server/ConfigParser/../../json.hpp
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/../libs/ConfigParser/config_parser.h \
+ /home/alex/Протей/Выпускная_работа/PGW_Protei/server/../libs/ConfigParser/../json.hpp

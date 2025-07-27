@@ -18,12 +18,12 @@
 
 #include "PGW/src/data_plane.h"
 #include "PGW/src/control_plane.h"
-#include "FileHandler/FileHandler.h"
-#include "../json.hpp"
-#include "../BCD/bcd.h"
-#include "../httplib.h"
-#include "Logger/logger.h"
-#include "ConfigParser/config_parser.h"
+#include "../libs/FileHandler/FileHandler.h"
+#include "../libs/json.hpp"
+#include "../libs/BCD/bcd.h"
+#include "../libs/httplib.h"
+#include "../libs/Logger/logger.h"
+#include "../libs/ConfigParser/config_parser.h"
 
 using nlohmann::json;
 
