@@ -1,3 +1,0 @@
-/home/alex/Протей/Выпускная_работа/PGW_Protei/client/build/CMakeFiles/pgw_client.dir
-/home/alex/Протей/Выпускная_работа/PGW_Protei/client/build/CMakeFiles/edit_cache.dir
-/home/alex/Протей/Выпускная_работа/PGW_Protei/client/build/CMakeFiles/rebuild_cache.dir
